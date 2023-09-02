@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avia</title>
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<h1>Avia</h1>
+	<section class="search">
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<div class="search_filter">
+						<div class="search_setting">
+							<div class="search_setting_subheader">Сортировать</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="sortTicket" id="sortTicket1">
+								<label class="form-check-label" for="sortTicket1">- по возрастанию цены</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="sortTicket" id="sortTicket2" checked>
+								<label class="form-check-label" for="sortTicket2">- по убыванию цены</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="radio" name="sortTicket" id="sortTicket3" checked>
+								<label class="form-check-label" for="sortTicket3">- по времени в пути</label>
+							  </div>
+						</div>
+						<div class="search_setting">
+							<div class="search_setting_subheader">Фильтровать</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkTransfer1">
+								<label class="form-check-label" for="checkTransfer1">- 1 пересадка</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="checkTransfer0" checked>
+								<label class="form-check-label" for="checkTransfer0">- без пересадок</label>
+							  </div>
+						</div>
+						<div class="search_setting">
+							<div class="search_setting_subheader">Цена</div>
+							<div class="form-check">
+								<label class="form-check-label" for="formPrice1">От</label>
+								<input type="text" class="form-control" id="formPrice1">
+							</div>
+							<div class="form-check">
+								<label class="form-check-label" for="formPrice2">До</label>
+								<input type="text" class="form-control" id="formPrice2">
+							</div>
+						</div>
+						<div class="search_setting">
+							<div class="search_setting_subheader">Авиакомпании</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">- LOT Polish</label>
+							  </div>
+							  <div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+								<label class="form-check-label" for="flexCheckChecked">- Аэрофлот</label>
+							  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="search_result">
+						<div class="ticket">
+							<div class="ticket_header">
+								<div class="ticket_logo">LOGO</div>
+								<div>
+									<div class="ticket_price">21049 ₽</div>
+									<div class="ticket_price_remark">Стоимость для одного взрослого пассажира</div>
+								</div>
+							</div>
+							<div class="ticket_wrap">
+								<div class="ticket_flight">
+									<div class="ticket_way">
+										<div class="ticket_way_depart">Москва, Шереметьево</div>
+										<div class="ticket_way_depart_code">(SVO)</div>
+										<div class="ticket_way_arrow">&rarr;</div>
+										<div class="ticket_way_arrive">Лондон, Хитроу</div>
+										<div class="ticket_way_arrive_code">(LHR)</div>
+									</div>
+									<div class="ticket_way_divider"></div>
+									<div class="ticket_date">
+										<div>
+											<div class="ticket_date_depart_time">20:40</div>
+											<div class="ticket_date_depart_day">18 авг. вт</div>
+										</div>
+										<div class="ticket_date_duration">3 ч 10 мин</div>
+										<div>
+											<div class="ticket_date_depart_day">18 авг. вт</div>
+											<div class="ticket_date_depart_time">23:50</div>
+										</div>
+									</div>
+									<div class="ticket_date_divider">
+										<div class="ticket_date_transfer">1 пересадка</div>
+									</div>
+									<div class="ticket_org">Рейс выполняет: ГТК Россия</div>
+								</div>
+								<div class="ticket_return">
+									<div class="ticket_way">
+										<div class="ticket_way_depart">Москва, Шереметьево</div>
+										<div class="ticket_way_depart_code">(SVO)</div>
+										<div class="ticket_way_arrow">&rarr;</div>
+										<div class="ticket_way_arrive">Лондон, Хитроу</div>
+										<div class="ticket_way_arrive_code">(LHR)</div>
+									</div>
+									<div class="ticket_way_divider"></div>
+									<div class="ticket_date">
+										<div>
+											<div class="ticket_date_depart_time">20:40</div>
+											<div class="ticket_date_depart_day">18 авг. вт</div>
+										</div>
+										<div class="ticket_date_duration">3 ч 10 мин</div>
+										<div>
+											<div class="ticket_date_depart_day">18 авг. вт</div>
+											<div class="ticket_date_depart_time">23:50</div>
+										</div>
+									</div>
+									<div class="ticket_date_divider">
+										<div class="ticket_date_transfer">1 пересадка</div>
+									</div>
+									<div class="ticket_org">Рейс выполняет: ГТК Россия</div>
+								</div>
+							</div>
+							<button class="ticket_btn">выбрать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
