@@ -1,7 +1,50 @@
 @media (max-width: 1199px)
 
 @media (max-width: 991px)
-
+	.ticket
+		&_logo
+			font-size: 12px
+		&_way
+			font-size: 14px
+		&_date
+			&_duration
+				font-size: 14px
+			&_transfer
+				font-size: 12px
+			&_depart, &_arrive
+				&_time
+					font-size: 16px
+				&_day
+					font-size: 12px
+		&_org
+			font-size: 12px
+		&_btn
+			font-size: 14px
+			&_more
+				font-size: 14px
 @media (max-width: 767px)
-
+	.search
+		&_filter
+			position: static
+			font-size: 14px
+		&_result
+			margin-left: 0
+	.ticket
+		&_logo
+			font-size: 12px
+		&_way
+			font-size: 14px
+		&_btn
+			&:hover
+				background-image: none
+			&_more
+				border-radius: 15px 40px
+				&:hover
+					border-radius: 15px 40px
+					background-image: none
 @media (max-width: 575px)
+	.ticket
+		&_date
+			> div
+				&:nth-child(3)
+					flex-wrap: wrap-reverse
