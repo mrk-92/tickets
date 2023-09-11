@@ -1,4 +1,9 @@
-@mixin btn_hover
-	// transition: 0.5s all
+@mixin btn_hover_ticket
 	&:hover
 		background-image: linear-gradient(to top, $color_orange, $color_orange_light)
+
+@mixin btn_hover_more
+	transition: 0.5s all
+	&:hover
+		border-radius: 15px 40px
+		background-image: linear-gradient(to top, $color_blue, $color_blue_light)
